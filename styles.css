@@ -37,6 +37,20 @@ section h2 {
   margin-top: 0;
 }
 
+.container {
+  display: flex;
+}
+
+.div1,
+.div2 {
+  flex: 1;
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+}
+
+profile-img {
+  width: 50%;
+}
 .project {
   margin-bottom: 20px;
 }
