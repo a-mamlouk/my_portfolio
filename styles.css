@@ -45,6 +45,10 @@ section h2 {
   flex: 1; /* Allocate space equally to div1 */
   padding: 10px; /* Add padding for spacing */
 }
+.div1 p:hover {
+  transition: transform 1s ease-in-out; /* Add a transition effect */
+  transform: scale(1.025); /* Increase size by 5% on hover */
+}
 
 .div2 {
   flex: 0 0 20%; /* Make div2 take up 20% of the container's width */
@@ -59,8 +63,11 @@ section h2 {
   /* Set the dimensions of the image */
   height: 300px;
   width: auto;
+  transition: transform 1s ease-in-out; /* Add a transition effect */
 }
-
+.profile-img:hover {
+  transform: scale(1.05); /* Increase size by 20% on hover */
+}
 .project {
   margin-bottom: 20px;
 }
