@@ -30,7 +30,7 @@ nav ul li a {
 }
 
 section {
-  padding: 50px 20px;
+  padding: 20px 20px;
 }
 
 section h2 {
@@ -38,19 +38,29 @@ section h2 {
 }
 
 .container {
-  display: flex;
+  display: flex; /* Make the container a flexbox */
 }
 
-.div1,
+.div1 {
+  flex: 1; /* Allocate space equally to div1 */
+  padding: 10px; /* Add padding for spacing */
+}
+
 .div2 {
-  flex: 1;
-  padding: 10px;
-  /* border: 1px solid #ccc; */
+  flex: 0 0 20%; /* Make div2 take up 20% of the container's width */
+  display: flex; /* Make div2 a flex container */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  padding: 10px; /* Add padding for spacing */
+  border: 1px solid #ccc; /* Add border for visualization */
 }
 
-profile-img {
-  width: 50%;
+.profile-img {
+  /* Set the dimensions of the image */
+  height: 300px;
+  width: auto;
 }
+
 .project {
   margin-bottom: 20px;
 }
