@@ -41,12 +41,16 @@ section h2 {
   display: flex; /* Make the container a flexbox */
 }
 
+.shadowed-div {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Adjust values as needed */
+}
 .div1 {
   flex: 1; /* Allocate space equally to div1 */
-  padding: 10px; /* Add padding for spacing */
+  padding: 0 20px 0 20px; /* Add padding for spacing */
+  margin-right: 20px; /* Add margin for spacing */
 }
 .div1 p:hover {
-  transition: transform 1s ease-in-out; /* Add a transition effect */
+  transition: transform 0.25s ease-in-out; /* Add a transition effect */
   transform: scale(1.025); /* Increase size by 5% on hover */
 }
 
