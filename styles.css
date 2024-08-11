@@ -75,6 +75,11 @@ section h2 {
 .project {
   margin-bottom: 20px;
 }
+#project_title {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
 
 footer {
   background-color: #333;
