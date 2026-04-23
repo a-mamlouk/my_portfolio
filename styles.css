@@ -1,8 +1,17 @@
+/* ========================================
+   BASE STYLES & RESETS
+   ======================================== */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
+
+/* ========================================
+   HEADER SECTION
+   ======================================== */
 
 header {
   background-color: #333;
@@ -15,78 +24,147 @@ header {
 
 header h1 {
   margin: 0;
+  font-size: 1.5rem;
 }
+
+/* ========================================
+   NAVIGATION SECTION
+   ======================================== */
 
 nav ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
 }
 
 nav ul li {
-  display: inline;
-  margin-right: 20px;
+  display: inline-block;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  transition: opacity 0.3s ease-in-out;
 }
 
+nav ul li a:hover {
+  opacity: 0.8;
+}
+
+/* ========================================
+   SECTION STYLES
+   ======================================== */
+
 section {
-  padding: 20px 20px;
+  padding: 20px;
 }
 
 section h2 {
   margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
 }
+
+/* ========================================
+   LAYOUT CONTAINER
+   ======================================== */
 
 .container {
-  display: flex; /* Make the container a flexbox */
+  display: flex;
+  gap: 20px;
 }
 
-.shadowed-div {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Adjust values as needed */
-}
-.div1 {
-  flex: 1; /* Allocate space equally to div1 */
-  padding: 0 20px 0 20px; /* Add padding for spacing */
-  margin-right: 20px; /* Add margin for spacing */
-}
-.div1 p:hover {
-  transition: transform 0.25s ease-in-out; /* Add a transition effect */
-  transform: scale(1.025); /* Increase size by 5% on hover */
+.container--shadowed {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.div2 {
-  flex: 0 0 20%; /* Make div2 take up 20% of the container's width */
-  display: flex; /* Make div2 a flex container */
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
-  padding: 10px; /* Add padding for spacing */
-  border: 1px solid #ccc; /* Add border for visualization */
+/* ========================================
+   MAIN CONTENT AREA
+   ======================================== */
+
+.main-content {
+  flex: 1;
+  padding: 0 20px;
 }
+
+.main-content p {
+  transition: transform 0.25s ease-in-out;
+}
+
+.main-content p:hover {
+  transform: scale(1.025);
+}
+
+/* ========================================
+   SIDEBAR SECTION
+   ======================================== */
+
+.sidebar {
+  flex: 0 0 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* ========================================
+   PROFILE IMAGE
+   ======================================== */
 
 .profile-img {
-  /* Set the dimensions of the image */
   height: 300px;
   width: auto;
-  transition: transform 1s ease-in-out; /* Add a transition effect */
+  max-width: 100%;
+  object-fit: contain;
+  transition: transform 1s ease-in-out;
 }
+
 .profile-img:hover {
-  transform: scale(1.05); /* Increase size by 20% on hover */
+  transform: scale(1.05);
 }
+
+/* ========================================
+   PROJECT STYLES
+   ======================================== */
+
 .project {
   margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
 }
-#project_title {
+
+.project__title {
   width: 50%;
   margin: 0 auto;
   text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
+
+/* ========================================
+   FOOTER SECTION
+   ======================================== */
 
 footer {
   background-color: #333;
   color: #fff;
   text-align: center;
   padding: 10px 0;
+  margin-top: 2rem;
+}
+
+/* ========================================
+   CONTACT SECTION
+   ======================================== */
+
+.contact-icon {
+  height: 24px;
+  width: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+  object-fit: contain;
 }
